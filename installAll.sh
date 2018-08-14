@@ -34,6 +34,10 @@ sudo aptitude install libjpeg-progs -y
 jpegtran -rotate 90 MyJpeg.jpg > MyJpegRotated.jpg
 sudo apt-get install gdebi-core -y
 sudo apt install htop -y
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update
+sudo apt-get install spotify-client
 sudo apt upgrade -y
 sudo apt full-upgrade -y
 sudo wget https://download.teamviewer.com/download/teamviewer_i386.deb
