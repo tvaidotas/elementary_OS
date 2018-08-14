@@ -33,6 +33,7 @@ sudo apt-get update
 sudo aptitude install libjpeg-progs -y
 jpegtran -rotate 90 MyJpeg.jpg > MyJpegRotated.jpg
 sudo apt-get install gdebi-core -y
+sudo apt install htop -y
 sudo apt upgrade -y
 sudo apt full-upgrade -y
 sudo wget https://download.teamviewer.com/download/teamviewer_i386.deb
