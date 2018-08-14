@@ -1,0 +1,111 @@
+sudo apt-get install -y software-properties-common python-software-properties
+
+sudo add-apt-repository ppa:git-core/ppa
+
+sudo apt-get update
+
+sudo apt-get install -y git
+
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+
+sudo apt-get update
+
+sudo apt-get install elementary-tweaks
+
+sudo apt install tlp tlp-rdw # for laptops only not neccessary, for better battery performance
+
+sudo apt install -y redshift # reduce blue light
+
+sudo apt install -y firefox
+
+sudo apt install -y libreoffice
+
+sudo apt install -y vlc
+
+sudo apt install -y gdebi
+
+#download the .deb chrome installer and then open it with gdebi to install it
+
+sudo apt-add-repository ppa:teejee2008/ppa
+
+sudo apt-get update
+
+sudo apt-get install -y timeshift # 2 above and this one is for backup
+
+sudo apt-get install -y docker-ce # optional
+
+sudo apt install -y maven
+
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+sudo apt-get install -y build-essential
+
+git config --global user.name "tvaidotas" 
+
+git config --global user.email "tadas.vaidotas@gmail.com"
+
+https://www.unixmen.com/install-oracle-java-jdk-8-elementary-os-luna-via-ppa/ # java for intellij sorts out figuring out where it is or try the other two
+
+sudo apt install default-jdk -y
+sudo apt install default-jre -y
+
+gsettings set org.pantheon.files.preferences single-click false # to disable single click to open files
+
+#### to install spotify
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo apt-get install spotify-client
+
+sudo apt-get update
+
+### end of spotify
+
+### install VB
+
+sudo apt install -y virtualbox-qt virtualbox-guest-additions-iso \ virtualbox-ext-pack
+
+### end of VB
+
+### rotate pictures
+
+sudo aptitude install libjpeg-progs -y
+
+jpegtran -rotate 90 MyJpeg.jpg > MyJpegRotated.jpg
+
+### end of rotate picture
+
+### update system through terminal
+
+sudo apt full-upgrade
+
+### end of update system through terminal
+
+### enable num lock on the login screen
+
+Edit /etc/lightdm/pantheon-greeter.conf with you favorite editor and remove the # on the line  activate-numlock=true
+
+### end of enable num lock on the login screen
+
+### get teamviewer
+
+sudo apt-get install gdebi-core -y
+
+wget https://download.teamviewer.com/download/teamviewer_i386.deb
+
+sudo gdebi teamviewer*.deb
+
+### end of teamviewer
+
+### enable desktop
+
+https://www.fosslinux.com/141/how-to-enable-adding-files-and-folders-to-desktop-in-elementary-os-freya.htm
+
+### end of enable desktop
+
+
+

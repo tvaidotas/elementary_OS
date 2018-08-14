@@ -1,0 +1,23 @@
+docker restart $(docker ps -q) # restart all docker containers
+
+docker ps -a # list all docker containers
+
+whereis java # gives path to where java is installed
+
+sudo service mongod start # start mongodb
+
+sudo service mongod stop # stop mongodb
+
+sudo apt install nodejs-legacy # a potential fix for the "npm install"
+
+unzip file -d destination # to unzip files
+
+htop # or "top" if htop is not installed to see all the process running
+
+kill -9 PID # to kill a process
+
+gksudo gnome-disks # manage disks better like format usb and stuff
+
+java -jar Location-of-RuneLite.jar --mode=OFF
+
+
